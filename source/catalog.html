@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title> Каталог HTML Academy: Пинк</title>
   </head>
-  <body>
+  <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo"></a>
-      <nav class="inner-nav">
-        <button class="inner-nav__toggle" type="button">
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="inner-nav__wrapper">
-          <ul class="inner-nav__list site-list">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="index.html">
                 Главная
@@ -37,95 +37,102 @@
         </div>
       </nav>
     </header>
-    <main class="inner-main">
-      <section class="foto-catalog">
-        <div class="foto-catalog__wrapper">
+    <main class="page-main">
+      <section class="photo-catalog">
+        <div class="photo-catalog__wrapper">
           <h1>Фотографии пользователей</h1>
-          <p  class="foto-catalog__text">
+          <p  class="photo-catalog__text">
             Взгляните на Фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
           </p>
-          <ul class="foto-catalog__list">
-            <li class="foto-catalog__item">
+          <ul class="photo-catalog__list">
+            <li class="photo-catalog__item">
               <figure>
                 <img src="" width="" height="" alt="">
                 <figcaption>
-                  <b>Анна</b> 
-                  <time class="timeago" datetime=""></time>
+                  <b>Анна</b>
+                  <time class="timeago" datetime="2020-12-01T18:18">(5 минут назад)</time>
                   <p>
                     Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
                   </p>
+                  <p>Нравится:215</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="foto-catalog__item">
+            <li class="photo-catalog__item">
               <figure>
                 <img src="" width="" height="" alt="">
                 <figcaption>
-                  <b>Левон</b> 
-                  <time class="timeago" datetime=""></time>
+                  <b>Левон</b>
+                  <time class="timeago" datetime="2020-12-01T18:18">(5 часов назад)</time>
                   <p>
                     Вчера он на луну летал, сегодня в руки к нам попал.
                   </p>
+                  <p>Нравится:356</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="foto-catalog__item">
+            <li class="photo-catalog__item">
               <figure>
                 <img src="" width="" height="" alt="">
                 <figcaption>
-                  <b>Антон</b> 
-                  <time class="timeago" datetime=""></time>
+                  <b>Антон</b>
+                  <time class="timeago" datetime="2020-12-01T18:18">(12 часов назад)</time>
                   <p>
                     Соседи будут рады!
                   </p>
+                  <p>Нравится:666</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="foto-catalog__item">
+            <li class="photo-catalog__item">
               <figure>
                 <img src="" width="" height="" alt="">
                 <figcaption>
-                  <b>Борис</b> 
-                  <time class="timeago" datetime=""></time>
+                  <b>Борис</b>
+                  <time class="timeago" datetime="2020-12-01T18:18">(20 часов назад)</time>
                   <p>
                     Здесь могла быть ваша цитата о высоком и вечном.
                   </p>
+                  <p>Нравится:215</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="foto-catalog__item">
+            <li class="photo-catalog__item">
               <figure>
                 <img src="" width="" height="" alt="">
                 <figcaption>
-                  <b>Сергей</b> 
-                  <time class="timeago" datetime=""></time>
+                  <b>Сергей</b>
+                  <time class="timeago" datetime="2020-12-01T18:18">(25 часов назад)</time>
                   <p>
                     Самая кубанская в мире!
                   </p>
+                  <p>Нравится:4</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="foto-catalog__item">
+            <li class="photo-catalog__item">
               <figure>
                 <img src="" width="" height="" alt="">
                 <figcaption>
-                  <b>Максим</b> 
-                  <time class="timeago" datetime=""></time>
+                  <b>Максим</b>
+                  <time class="timeago" datetime="2020-12-01T18:18">(40 часов назад)</time>
                   <p>
                     Где снег-то?
                   </p>
+                  <p>Нравится:150</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="foto-catalog__item">
+            <li class="photo-catalog__item">
               <figure>
                 <img src="" width="" height="" alt="">
                 <figcaption>
-                  <b>Надежда</b> 
-                  <time class="timeago" datetime=""></time>
+                  <b>Надежда</b>
+                  <time class="timeago" datetime="2020-12-01T18:18">(45 часов назад)</time>
                   <p>
                     Всем GM и взаимные лайки!
                   </p>
+                  <p>Нравится:2560</p>
                 </figcaption>
               </figure>
             </li>
@@ -134,13 +141,13 @@
             Затмите их всех! Выкладывайте все, что накопилось в телефоне!
           </p>
         </div>
-      </section>  
+      </section>
       <section class="yourpost">
         <div class="yourpost__wrapper">
           <h2 class="visually-hidden">Сделай свой пост</h2>
           <img src="" width="" height="" alt="">
-          <button class="yourpost__topost" type="button">Запостить</button>
-          <button class="yourpost__tocancel" type="button">Отмена</button>
+          <button class="yourpost__topost" type="submit">Запостить</button>
+          <button class="yourpost__tocancel" type="reset">Отмена</button>
         </div>
       </section>
     </main>
