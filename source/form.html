@@ -39,10 +39,10 @@
         </nav>
       </header>
       <main>
-          <h1> Конкурс на самое безбашенное путешествие с Пинк</h1>
+          <h1 class="form__slogan"> Конкурс на самое безбашенное путешествие с Пинк</h1>
           <form  action="https://echo.htmlacademy.ru" method="post">
-            <p>Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
-            <div class="questionary">
+            <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+            <div class="questionary_wrapper">
               <p class="questionary__item">
                 <label for="questionary-surname">Фамилия:</label>
                 <input id="questionary-surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
@@ -57,8 +57,8 @@
               </p>
             </div>
             <div class="checkbox">
-              <fieldset>
-                <legend>Ваши безбашенные достижения в путешествии</legend>
+              <fieldset class="checkbox__fieldset">
+                <legend class="checkbox__text">Ваши безбашенные достижения в путешествии</legend>
                 <ul class="checkbox__list">
                   <li class="checkbox__option">
                     <input class="visually-hidden checkbox__input" type="checkbox" name="selfie" id="checkbox-selfie" checked>
@@ -98,11 +98,11 @@
               </p>
             </div>
             <div class="radio">
-              <fieldset>
-                <legend>
+              <fieldset class="radio__fieldset">
+                <legend class="radio__title">
                   С каким приложением путешествовали?
                 </legend>
-                <ul>
+                <ul class="radio__list">
                   <li class="radio__item">
                     <input class="visually-hidden radio__input" type="radio" name="app" value="ios" id="radio--ios" checked>
                     <label for="radio--ios">Pink для IOS</label>
@@ -118,9 +118,9 @@
                 </ul>
               </fieldset>
             </div>
-            <div>
-              <fieldset>
-                <legend>
+            <div class="review__wrapper">
+              <fieldset class="review__fieldset">
+                <legend class="review__title">
                   Опишите свои эмоции
                 </legend>
                 <textarea name="review" id="your-review" rows="10" >
@@ -128,8 +128,9 @@
                 </textarea>
               </fieldset>
             </div>
-            <input type="submit" value="Отправить форму">
-            <p>* - обязательные поля</p>
+            <input class="form__button" type="submit" value="Отправить форму">
+            <p class="form__star">*</p>
+            <p class="form__underbutton">- обязательные поля</p>
           </form>
         </main>
         <footer class="page-footer">
