@@ -15,4 +15,17 @@
   line-height: 18px;
   text-align: center;
   color: @font-blue;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
