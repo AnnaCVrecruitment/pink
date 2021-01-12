@@ -3,6 +3,17 @@
   margin: 0;
   padding: 0;
   text-align: center;
+
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid @table;
+    border-radius: 1px;
+    width: 616px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 936px;
+  }
 }
 
 .review__title {

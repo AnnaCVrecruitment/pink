@@ -1,7 +1,23 @@
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .form__slogan {
   font-size: 24px;
   line-height: 32.68px;
-  color: @white;
+  text-align: center;
+  /*color: @white;*/
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 68.09px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68.09px;
+  }
 }
 
 .form__text {
@@ -9,6 +25,16 @@
   font-size: 14px;
   line-height: 30px;
   color: @font-blue;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68.09px;
+  }
 }
 
 .form__button {
@@ -21,6 +47,13 @@
   border-radius: 1px;
   padding: 23px 45px;
   margin: 52px 22px;
+}
+
+.form__button-grid {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .form__star {

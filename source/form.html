@@ -2,36 +2,37 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title> Форма HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
         <a class="page-header__logo"></a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
+        <nav class="site-navigation">
+          <button class="site-navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a href="index.html">
+          <div class="site-navigation__wrapper">
+            <ul class="site-navigation__list">
+              <li class="site-navigation__item">
+                <a>
                   Главная
                 </a>
               </li>
-              <li class="site-list__item">
+              <li class="site-navigation__item">
                 <a href="blank.html">
                   Фотографии
                 </a>
               </li>
-              <li class="site-list__item">
-                <a href="#">
+              <li class="site-navigation__item">
+                <a href="blank.html">
                   Конкурс
                 </a>
               </li>
-              <li class="site-list__item">
+              <li class="site-navigation__item">
                 <a href="blank.html">
-                  Html Academy
+                  HTML Academy
                 </a>
               </li>
             </ul>
@@ -42,81 +43,88 @@
           <h1 class="form__slogan"> Конкурс на самое безбашенное путешествие с Пинк</h1>
           <form  action="https://echo.htmlacademy.ru" method="post">
             <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
-            <div class="questionary">
-              <p class="questionary__item">
-                <label for="questionary-surname">Фамилия:</label>
-                <input id="questionary-surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
-              </p>
-              <p class="questionary__item">
-                <label for="questionary-name">Имя:</label>
-                <input id="questionary-name" type="text" name="name" placeholder="Введите ваше имя*" required>
-              </p>
-              <p class="questionary__item">
-                <label for="questionary-patronymic">Отчество:</label>
-                <input id="questionary-patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
-              </p>
-            </div>
-            <div class="checkbox">
-              <fieldset class="checkbox__fieldset">
-                <legend class="checkbox__text">Ваши безбашенные достижения в путешествии</legend>
-                <ul class="checkbox__list">
-                  <li class="checkbox__option">
-                    <input class="visually-hidden checkbox__input" type="checkbox" name="selfie" id="checkbox-selfie" checked>
-                    <label for="checkbox-selfie">Сделал селфи с акулой</label>
-                  </li>
-                  <li class="checkbox__option">
-                    <input class="visually-hidden checkbox__input" type="checkbox" name="beach" id="checkbox-beach" checked>
-                    <label for="checkbox-beach">Обгорел на пляже</label>
-                  </li>
-                  <li class="checkbox__option">
-                    <input class="visually-hidden checkbox__input" type="checkbox" name="norris" id="checkbox-norris">
-                    <label for="checkbox-norris">Видел Чака Норриса</label>
-                  </li>
-                  <li class="checkbox__option">
-                    <input class="visually-hidden checkbox__input" type="checkbox" name="souvenir" id="checkbox-souvenir">
-                    <label for="checkbox-souvenir">Накупил сувениров</label>
-                  </li>
-                  <li class="checkbox__option">
-                    <input class="visually-hidden checkbox__input" type="checkbox" name="tower" id="checkbox-tower" checked>
-                    <label for="checkbox-tower">Удержал башню</label>
-                  </li>
-                  <li class="checkbox__option">
-                    <input class="visually-hidden checkbox__input" type="checkbox" name="hotel" id="checkbox-hotel">
-                    <label for="checkbox-hotel">Разгромил отель</label>
-                  </li>
-                </ul>
-              </fieldset>
-            </div>
-            <div class="form-contacts">
-              <p class="form-contacts__item">
-                <label for="your_tel">Номер телефона</label>
-                <input id="your_tel" type="tel" name="tel" placeholder="Номер, пожалуйста" pattern>
-              </p>
-              <p class="form-contacts__item">
-                <label for="your_mail">Адрес почты</label>
-                <input id="your_mail" type="email" name="mail" placeholder="Введите почту*" required>
-              </p>
-            </div>
-            <div class="radio">
-              <fieldset class="radio__fieldset">
-                <legend class="radio__title">
-                  С каким приложением путешествовали?
-                </legend>
-                <ul class="radio__list">
-                  <li class="radio__item">
-                    <input class="visually-hidden radio__input" type="radio" name="app" value="ios" id="radio--ios" checked>
-                    <label for="radio--ios">Pink для IOS</label>
-                  </li>
-                  <li class="radio__item">
-                    <input class="visually-hidden radio__input" type="radio" name="app" value="android" id="radio--android">
-                    <label for="radio--android">Pink на Android</label>
-                  </li>
-                  <li class="radio__item">
-                    <input class="visually-hidden radio__input" type="radio" name="app" value="windows" id="radio--windows">
-                    <label for="radio--windows">Windows Phone</label>
-                  </li>
-                </ul>
-              </fieldset>
+            <div class="form-container">
+              <div class="questionary">
+                <p class="questionary__item">
+                  <label for="questionary-surname">Фамилия:</label>
+                  <input id="questionary-surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
+                </p>
+                <p class="questionary__item questionary-name">
+                  <label for="questionary-name">Имя:</label>
+                  <input  id="questionary-name" type="text" name="name" placeholder="Введите ваше имя*" required>
+                </p>
+                <p class="questionary__item">
+                  <label for="questionary-patronymic">Отчество:</label>
+                  <input id="questionary-patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+                </p>
+              </div>
+              <div class="checkbox">
+                <fieldset class="checkbox__fieldset">
+                  <legend class="checkbox__text">Ваши безбашенные достижения в путешествии</legend>
+                  <ul class="checkbox__list">
+                    <li class="checkbox__option">
+                      <input class="visually-hidden checkbox__input" type="checkbox" name="selfie" id="checkbox-selfie" checked>
+                      <label for="checkbox-selfie">Сделал селфи с акулой</label>
+                    </li>
+                    <li class="checkbox__option checkbox-beach">
+                      <input class="visually-hidden checkbox__input" type="checkbox" name="beach" id="checkbox-beach" checked>
+                      <label for="checkbox-beach">Обгорел на пляже</label>
+                    </li>
+                    <li class="checkbox__option checkbox-norris">
+                      <input class="visually-hidden checkbox__input" type="checkbox" name="norris" id="checkbox-norris">
+                      <label for="checkbox-norris">Видел Чака Норриса</label>
+                    </li>
+                    <li class="checkbox__option checkbox-souvenir">
+                      <input class="visually-hidden checkbox__input" type="checkbox" name="souvenir" id="checkbox-souvenir">
+                      <label for="checkbox-souvenir">Накупил сувениров</label>
+                    </li>
+                    <li class="checkbox__option checkbox-tower">
+                      <input class="visually-hidden checkbox__input" type="checkbox" name="tower" id="checkbox-tower" checked>
+                      <label for="checkbox-tower">Удержал башню</label>
+                    </li>
+                    <li class="checkbox__option checkbox-hotel">
+                      <input class="visually-hidden checkbox__input" type="checkbox" name="hotel" id="checkbox-hotel">
+                      <label for="checkbox-hotel">Разгромил отель</label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+              <div class="form-contacts">
+                <fieldset class="form-contacts__fieldset">
+                  <legend class="form-contacts__title">
+                    Контактная информация
+                  </legend>
+                  <p class="form-contacts__item">
+                    <label for="your_tel">Номер телефона</label>
+                    <input id="your_tel" type="tel" name="tel" placeholder="Номер, пожалуйста" pattern>
+                  </p>
+                  <p class="form-contacts__item">
+                    <label for="your_mail">Адрес почты</label>
+                    <input id="your_mail" type="email" name="mail" placeholder="Введите почту*" required>
+                  </p>
+                </fieldset>
+              </div>
+              <div class="radio">
+                <fieldset class="radio__fieldset">
+                  <legend class="radio__title">
+                    С каким приложением путешествовали?
+                  </legend>
+                  <ul class="radio__list">
+                    <li class="radio__item">
+                      <input class="visually-hidden radio__input" type="radio" name="app" value="ios" id="radio--ios" checked>
+                      <label for="radio--ios">Pink для IOS</label>
+                    </li>
+                    <li class="radio__item">
+                      <input class="visually-hidden radio__input" type="radio" name="app" value="android" id="radio--android">
+                      <label for="radio--android">Pink на Android</label>
+                    </li>
+                    <li class="radio__item">
+                      <input class="visually-hidden radio__input" type="radio" name="app" value="windows" id="radio--windows">
+                      <label for="radio--windows">Windows Phone</label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
             </div>
             <div class="review">
               <fieldset class="review__fieldset">
@@ -128,9 +136,11 @@
                 </textarea>
               </fieldset>
             </div>
-            <input class="form__button" type="submit" value="Отправить форму">
-            <p class="form__star">*</p>
-            <p class="form__underbutton">- обязательные поля</p>
+            <div class="form__button-grid">
+              <input class="form__button" type="submit" value="Отправить форму">
+              <p class="form__star">*</p>
+              <p class="form__underbutton">- обязательные поля</p>
+            </div>
           </form>
         </main>
         <footer class="page-footer">
