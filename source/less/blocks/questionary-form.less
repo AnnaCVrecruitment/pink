@@ -7,8 +7,12 @@
 
   @media (min-width: @tablet-width) {
     width: auto;
-    margin-right: 22px;
+    margin-right: auto;
     order: -2;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
   }
 }
 
@@ -33,10 +37,6 @@
   @media (min-width: @desktop-width) {
     width: 336px;
   }
-}
-
-.questionary label {
-  margin-left: 43px;
 }
 
 .questionary-name input {
