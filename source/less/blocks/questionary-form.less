@@ -1,16 +1,50 @@
+.questionary {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    margin-right: auto;
+    order: -2;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+  }
+}
+
 .questionary__item {
   color: @red;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-left: 43px;
-  margin-top: 29px;
-  margin-bottom: 20px;
 }
 
 .questionary input {
-  width: 276px;
+  min-width: 276px;
   height: 59px;
   border: 2px solid @table;
   border-radius: 1px;
+  margin-left: 22px;
+
+  @media (min-width: @tablet-width) {
+    width: 521px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 336px;
+  }
+}
+
+.questionary-name input {
+  @media (min-width: @tablet-width) {
+    width: 561px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 376px;
+  }
 }

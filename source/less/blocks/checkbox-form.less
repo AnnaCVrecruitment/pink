@@ -1,6 +1,11 @@
 .checkbox {
   background: @grey;
-  text-align: center;
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    background: none;
+    order: 1;
+  }
 }
 
 .checkbox__list {
@@ -9,6 +14,11 @@
   line-height: 30px;
   color: @font-blue;
   margin: 0;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .checkbox__list li {
@@ -20,6 +30,11 @@
   margin: 0;
   padding: 0;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid @table;
+    border-radius: 1px;
+  }
 }
 
 .checkbox__text {
@@ -29,4 +44,34 @@
   text-align: center;
   text-transform: uppercase;
   padding: 42px 51px 44px 51px;
+}
+
+.checkbox-norris {
+  @media (min-width: @desktop-width) {
+    order: 1;
+  }
+}
+
+.checkbox-tower {
+  @media (min-width: @desktop-width) {
+    order: 2;
+  }
+}
+
+.checkbox-beach {
+  @media (min-width: @desktop-width) {
+    order: 3;
+  }
+}
+
+.checkbox-souvenir {
+  @media (min-width: @desktop-width) {
+    order: 4;
+  }
+}
+
+.checkbox-hotel {
+  @media (min-width: @desktop-width) {
+    order: 5;
+  }
 }

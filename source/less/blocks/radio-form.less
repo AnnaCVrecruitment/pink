@@ -1,12 +1,32 @@
 .radio {
   background-color: @grey;
-  text-align: center;
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+    order: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
+    width: 431px;
+  }
 }
 
 .radio__fieldset {
   border: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid @table;
+    border-radius: 1px;
+    width: 616px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 431px;
+  }
 }
 
 .radio__title {
@@ -15,7 +35,12 @@
   color: @red;
   text-align: center;
   text-transform: uppercase;
-  padding: 42px 51px 25px 55px;
+
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 30px;
+  }
 }
 
 .radio__list {
