@@ -2,36 +2,37 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title> Каталог HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo"></a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+      <nav class="site-navigation">
+        <button class="site-navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">
+        <div class="site-navigation__wrapper">
+          <ul class="site-navigation__list">
+            <li class="site-navigation__item">
+              <a>
                 Главная
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="site-navigation__item">
               <a href="blank.html">
                 Фотографии
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="site-navigation__item">
               <a href="blank.html">
                 Конкурс
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="site-navigation__item">
               <a href="blank.html">
-                Html Academy
+                HTML Academy
               </a>
             </li>
           </ul>
@@ -49,7 +50,7 @@
             <li class="photo-catalog__item">
               <figure>
                 <img src="" width="" height="" alt="">
-                <figcaption class="photo-catalog__background">
+                <figcaption class="photo-catalog__background first-photo">
                   <b>Анна</b>
                   <time class="photo-catalog__timeago" datetime="2020-12-01T18:18">(5 минут назад)</time>
                   <p>
@@ -59,6 +60,7 @@
                 </figcaption>
               </figure>
             </li>
+
             <li class="photo-catalog__item">
               <figure>
                 <img src="" width="280" height="180" alt="">
@@ -137,6 +139,7 @@
                 </figcaption>
               </figure>
             </li>
+
           </ul>
         </div>
       </section>
@@ -148,8 +151,10 @@
           <div class="yourpost__wrapper">
             <h2 class="visually-hidden">Сделай свой пост</h2>
             <img src="" width="280" height="374" alt="">
-            <button class="yourpost__topost" type="submit">Запостить</button>
-            <button class="yourpost__tocancel" type="reset">Отмена</button>
+            <div class="yourpost__buttons">
+              <button class="yourpost__topost" type="submit">Запостить</button>
+              <button class="yourpost__tocancel" type="reset">Отмена</button>
+            </div>
           </div>
         </form>
       </section>

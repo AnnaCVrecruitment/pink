@@ -8,6 +8,11 @@
 .yourpost__wrapper {
   text-align: center;
   background-color: @grey;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .yourpost__topost {
@@ -21,7 +26,6 @@
   line-height: 18px;
   font-weight: bold;
   text-align: center;
-  margin: 38px 20px 12px 20px;
 }
 
 .yourpost__tocancel {
@@ -36,7 +40,16 @@
   line-height: 18px;
   font-weight: bold;
   text-align: center;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 41px;
+}
+
+.yourpost__buttons {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
 }
