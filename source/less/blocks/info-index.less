@@ -2,7 +2,9 @@
   text-align: center;
   background-color: @darkblue;
   color: @white;
-  margin-top: 114px;
+  padding-top: 29px;
+  padding-bottom: 35px;
+
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -11,20 +13,30 @@
 }
 
 .info__slogan {
+  display: block;
   font-size: 24px;
   line-height: 28.8px;
   color: @white;
   text-align: center;
   font-weight: 300;
+  height: 47px;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 325px;
 
   @media (min-width: @tablet-width) {
     font-size: 40px;
     line-height: 48px;
+    margin-top: 70px;
+    margin-left: 50px;
+    width: 150px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 50px;
     line-height: 68.09px;
+    width: 300px;
+
   }
 }
 
@@ -34,6 +46,7 @@
 }
 
 .info__download {
+  display: block;
   width: 280px;
   height: 55px;
   font-weight: bold;
@@ -42,24 +55,40 @@
   border: 3px solid @white;
   box-sizing: border-box;
   border-radius: 29px;
-  padding: 21px 39px 21px 38px;
+  text-align: center;
+  margin-left: 20px;
+  padding-top: 15px;
 
   @media (min-width: @tablet-width) {
     width: 300px;
-
-    padding: 10px 49px 21px 48px;
+    margin-top: -200px;
+    padding: 10px auto;
   }
 
   @media (min-width: @desktop-width) {
-    width: 300px;
+    width: 335px;
     height: 56px;
     font-size: 21px;
-
-    padding: 20px 32px 20px 31px;
+    padding: auto;
   }
 }
 
 .info__text {
+  display: block;
+  width: 265px;
+  height: 32px;
   font-size: 14px;
   line-height: 24px;
+  margin-left: 25px;
+  margin-top: -10px;
+  background-color: @darkblue;
+  margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    margin-top: -125px;
+    margin-left: 5px;
+    width: 350px;
+    height: 37px;
+  }
 }

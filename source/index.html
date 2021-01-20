@@ -6,15 +6,18 @@
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page__body">
+  <body class="page__body page__container">
     <header class="page-header">
       <a class="page-header__logo"></a>
-      <nav class="site-navigation">
+      <nav class="site-navigation main-nav--opened main-nav--nojs">
         <button class="site-navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="site-navigation__wrapper">
           <ul class="site-navigation__list">
+            <li class="site-navigation__item site-navigation--string">
+              <img src="" width="" height="" alt="">
+            </li>
             <li class="site-navigation__item">
               <a>
                 Главная
@@ -39,7 +42,7 @@
         </div>
       </nav>
     </header>
-    <main class="page-main page__container">
+    <main class="page-main">
       <section class="info">
         <div class="info__wrapper">
           <h1 class="visually-hidden">
@@ -64,7 +67,7 @@
             </li>
           </ul>
           <p class="info__text">
-            Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
           </p>
         </div>
       </section>
@@ -72,8 +75,10 @@
         <h2 class="visually-hidden">
           Преимущества приложения
         </h2>
-        <p class="advantages__slogan">
+        <p class="advantages__slogan slogan1">
           Устали от серости мегаполиса?
+        </p>
+        <p class="advantages__slogan slogan2">
           Нам есть, что вам предложить!
         </p>
         <div class="advantages__container">
@@ -86,29 +91,41 @@
                 <h3 class="advantages__title">
                   Поднимает настроение
                 </h3>
-                <p class="advantages__description">
-                  Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+                <p class="advantages__description advantages__description1">
+                  Приложение позволит вам победить осеннюю хандру и депрессию <br> буквально в несколько кликов!
                 </p>
               </li>
               <li class="advantages__item">
-                <h3 class="advantages__title">
+                <h3 class="advantages__title advantages__title2">
                   Меняет мир вокруг
                 </h3>
-                <p class="advantages__description">
-                  Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                <p class="advantages__description advantages__description2">
+                  Сделайте снимок и украсьте его <br> смайликом или текстовой подписью, <br> чтобы усилить эффект
                 </p>
               </li>
               <li class="advantages__item">
-                <h3 class="advantages__title">
+                <h3 class="advantages__title advantages__title3">
                   Заводит новых друзей
                 </h3>
-                <p class="advantages__description">
-                  Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+                <p class="advantages__description advantages__description3">
+                  Ставьте лайки, комментируйте, <br> делитесь фотографиями с друзьями и заводите новых
                 </p>
               </li>
             </ul>
           </div>
         </div>
+      </section>
+      <section>
+        <div class="effect">
+          <div>
+            <img class="effect__img" src="" width="10" height="10" alt="24 часа">
+          </div>
+        <div class="effect__grid">
+          <h2 class="effect__title">Эффект <br> на 24 часа!</h2>
+          <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a href="#">Узнать больше об исследовании</a>
+        </div>
+      </div>
       </section>
       <section class="reviews">
         <div class="reviews__wrapper slider">
@@ -119,7 +136,7 @@
             <blockquote class="reviews__item">
               <div class="reviews__author-info">
                 <cite class="reviews__author-name">Николай Петров</cite>
-                <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи. А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+                <p class="reviews__text">«Это приложение перевернуло мой мир <br> и позволило по-новому взглянуть на <br> привычные серые вещи! А еще я <br> познакомился со своей будущей женой <br> в комментариях к выложенной <br> фотографии!»</p>
               </div>
             </blockquote>
           </div>
@@ -172,21 +189,21 @@
               <h3 class="contacts__title">
                 Звоните:
               </h3>
-              <a class="contacts__info"
-                href="tel+78125556666">7 (812) 555-66-66
+              <a class="contacts__info tel"
+                href="tel+78125556666">+7 (812) 555-66-66
               </a>
             </div>
             <div class="contacts__flex2">
-              <h3 class="contacts__title">
+              <h3 class="contacts__title contacts__title_write">
                 Пишите:
               </h3>
-              <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <a class="contacts__info mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </div>
             <div class="contacts__flex3">
-              <h3 class="contacts__title">
+              <h3 class="contacts__title title3">
                 Приезжайте в гости:
               </h3>
-              <p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
+              <p class="contacts__info address">ул. Большая <br> Конюшенная, 19/8</p>
             </div>
           </div>
         <img src="" width="" height="" alt="карта">

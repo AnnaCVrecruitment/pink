@@ -19,6 +19,7 @@
 
 .contacts__flex3 {
   text-align: center;
+  margin-top: -125px;
 
   @media (min-width: @tablet-width) {
     width: 100%;
@@ -52,12 +53,40 @@
 }
 
 .contacts__title {
+  margin-top: 37px;
+  margin-bottom: 0px;
   font-size: 18px;
   line-height: 25px;
   font-weight: bold;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -10px;
+    margin-left: 10px;
+  }
 }
 
+.contacts__title_write {
+ margin-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -5px;
+    margin-left: -10px;
+  }
+}
+
+.mail {
+  margin-left: 10px;
+  width: 205px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -15px;
+    margin-left: -5px;
+  }
+}
+
+
 .contacts__info {
+  margin-left: 2px;
   font-size: 24px;
   line-height: 33px;
   color: @red;
@@ -68,6 +97,8 @@
 }
 
 .contacts__slogan {
+  margin-top: 135px;
+  margin-left: 55px;
   font-size: 24px;
   color: @font-blue;
   line-height: 28.8px;
@@ -75,10 +106,34 @@
   @media (min-width: @tablet-width) {
     font-size: 40px;
     line-height: 54.47px;
+    margin-top: 275px;
+    margin-left: 135px;
+    width: 400px;
+    text-align: center;;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 50px;
     line-height: 68.09px;
+  }
+}
+
+.address {
+  margin-top: 0px;
+  width: 250px;
+  margin-left: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 25px;
+    margin-left: 200px;
+  }
+ }
+
+.title3 {
+  margin-top: 145px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 150px;
+    margin-left: -5px;
   }
 }

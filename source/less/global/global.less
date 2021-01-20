@@ -16,17 +16,19 @@ img {
   overflow: hidden;
 }
 
-.page__body {
-  min-width: 320px;
-}
 
 .page__container {
-  width: auto;
-  padding: 0 20px;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+  }
 
   @media (min-width: @desktop-width) {
-    padding: 0 130px;
-    width: 960px;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 
@@ -34,4 +36,35 @@ img {
   font-size: 14px;
   line-height: 24px;
   color: @font-blue;
+}
+
+.page {
+  height: 100%;
+  font-size: 18px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  line-height: 27px;
+}
+
+.page__body {
+  min-height: 100%;
+}
+
+.page-footer__wrapper {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: @font-blue;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
